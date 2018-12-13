@@ -12,7 +12,6 @@ minMax (x:xs) = let mx = minMax xs
     then Just (x,x) 
     else Just (min x (fst (fromJust mx)), max x (snd (fromJust mx)))
 
-
 -- Task4
 majorItemHelper :: Eq a => [a] -> Maybe(a) -> Int -> Maybe(a)
 majorItemHelper x candidate confidence =
